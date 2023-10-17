@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design->(Html/Css)</title>
+
+    <style>
+           textarea{
+                        resize: none;
+                        outline-color:orangered;
+           }
+           body{
+                    
+                    margin:0px;
+                    background-color: rgb(143, 194, 196);
+                    display: flex;
+                     
+           }
+
+
+           form{
+                 box-sizing: border-box;
+                 background-color: cornsilk;
+                 margin: auto;
+                 padding: 40px;
+           }
+
+           label{
+                    font-size: 20px;
+                    font-style: italic;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight:550;
+                    
+                    text-transform: capitalize;
+                    text-decoration: underline;
+                     
+    
+           }
+
+           input,select,option,textarea{
+
+                border:2px solid orangered;
+                border-radius: 5px;
+                font-size: 20px;
+                    font-style: italic;
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding-left:10px;
+                    margin-left: 18px;
+
+
+           }
+           button{
+                      font-size: 20px;
+                      text-transform: uppercase;
+                      border: 2px groove goldenrod;
+                      padding: 10px;
+           }
+           .resetbtn{
+                      font-size: 20px;
+                      text-transform: uppercase;
+                      border: 2px groove goldenrod;
+                      padding: 10px;
+                      border-radius: 0px;
+                      margin-left: 30px;
+           }
+
+           fieldset{
+              border:3px dashed palevioletred;
+              padding-top:40px ;
+              padding-left:30px;
+
+           }
+           legend{
+            font-size: 25px;
+            text-align: center;
+
+           }
+
+    </style>
+</head>
+<body>
+
+    <form action="">
+
+    <fieldset>
+
+                <legend>User's Biodata</legend>
+
+                
+        <label for="yourname">Name  <input type="text" id="yourname" placeholder="username" name="username" value="" required></label><br><br>
+
+
+
+        <label for="youremail">Email   <input type="email" id="youremail" required   placeholder="useremail" name="useremail"></label><br><br>
+
+
+        <label for="yourpassword" >Password <input type="password"  id="yourpassword" required  placeholder="userpassword" name="userpassword"></label><br><br>
+        
+       <label for="list"> What is your favourite color ? </label><br><br>
+        <select name="color" id="list">
+            <option value="">--select your favourite color--</option>
+            <option value=" ">red</option>
+            <option value=" ">orange</option>
+            <option value=" ">Green</option>
+            <option value=" ">Black</option>
+            <option value=" ">Pink</option>
+            <option value=" ">Yellow</option>
+
+        </select>
+        <br><br>
+
+
+        <label for="gender">Gender <br><br>
+        <input type="radio" name="gender" id="gender">Male<input type="radio" name="gender" id="gender">Female<input type="radio" name="gender" id="gender">Others</label>
+        <br><br>
+
+
+        <label for="dob">Date of Birth : <input type="date" id="dob"></label>
+        <br><br>
+
+
+        <label for="resume">Resume <input type="file" id="resume"></label>
+        <br><br>
+
+
+        <label for="Glink">Github Link <input type="url" id="Glink" ></label> <br><br>
+
+        
+        <label > Name of your college <br><br>
+            <input type="text" list="clglist">
+               <datalist id="clglist">
+                     <option value="--select your college--"></option>
+                     <option value="Nsut">Nsut</option>
+                     <option value="AIACTR">AIACTR</option>
+                     <option value="GB pant">GB pant</option>
+                     <option value="AKTU">AKTU</option>
+                     <option value="Shyam Lal">Shyam Lal</option>
+                     <option value="West Campus">West Campus</option>
+               </datalist>
+
+        </label><br><br>
+
+
+        <label for="text">Write about Yourself in brief</label> <br><br>
+        <textarea name="textbox" id="text" cols="18" rows="4"></textarea>
+
+
+        <fieldset>
+            <legend>Parent's Details</legend>
+            <input type="text" placeholder="Father's Name"><br><br>
+            <input type="text" placeholder="Mother's Name"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <input type="tel" placeholder="Mobile Number">
+        </fieldset><br>
+
+
+       <label for="choice"> Choose languages You know:</ <br><br>
+        <input type="checkbox" id="choice">C<br>
+        <input type="checkbox">C++<br>
+        <input type="checkbox">Java<br>
+        <input type="checkbox">Html<br>
+        <input type="checkbox">CSS<br>
+        <input type="checkbox">Python<br>
+        <input type="checkbox">Java Script<br>
+        <input type="checkbox">SQL
+        <label><br><br>
+
+
+        <button>Submit your Details</button> 
+        <input type="reset" class="resetbtn" > 
+
+    </fieldset>
+
+
+    </form>
+    
+</body>
+</html>
